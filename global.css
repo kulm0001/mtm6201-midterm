@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ITC American Typewriter Std', arial, helvetica;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+input, button, textarea, a {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #000;
+}
+
+/* adding noticable animation */
+@keyframes ayana {
+    0% {
+        color: #000;
+    }
+    25% {
+        color: #5686F5;
+    }
+    50% {
+        color: #000;
+    }
+    75% {
+        color:#5686F5;
+    }
+    100% {
+        color: #000;
+    }
+}
+
+@keyframes socialll {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation-name: ayana;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.social {
+    animation-name: socialll;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+a:hover {
+    color: #F09CE5;
+}
+
+a:active {
+    color: #F09CE5;
+}
+
+a.btn {
+    margin: 0 auto;
+    color: #F09CE5;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #F09CE5;
+}
+
+a.btn:hover {
+    background-color: #f5e5f3;
+}
+
+a.btn_solid {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #F09CE5;
+    border-radius: 20px;
+    border: 1px solid #F09CE5;
+}
+
+a.btn_solid:hover {
+    background-color: #fff;
+    color: #F09CE5;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    width: 100%;
+}
+
+.wrap {
+    width: 70%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .wrap {
+        width: 90%;
+    }
+
+    a.btn, a.btn_solid {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .wrap {
+        width: 90%;
+    }
+
+    a.btn, a.btn_solid {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    
+}
+
+
+
